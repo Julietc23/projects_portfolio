@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/perfil.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Agustin Julian Rodriguez Etchegoyen</h2>   
+        <p>Soy estudiante de Física en la Universidad de Buenos Aires, con una sólida formación en matemáticas avanzadas, que abarca entre muchos temas álgebra, estadística y cálculo. Mi estudio riguroso de la física me ha proporcionado una comprensión profunda de los principios científicos y una capacidad para aplicar estos conocimientos en diversos contextos.</p>
+        <br>
+        <p>Además, he desarrollado habilidades en programación de manera autodidacta, especializándome en Python. Manejo con soltura bibliotecas clave para el análisis de datos, como NumPy, Pandas y Matplotlib, y tengo experiencia en el desarrollo web backend utilizando el framework Django. Durante un curso especializado, aprendí a implementar el patrón MVT (Model-View-Template), gestionar entornos virtuales con Pipenv y crear aplicaciones escalables con funcionalidades como autenticación, CRUD y paginación. También adquirí experiencia en el despliegue de aplicaciones en servidores de producción.</p>
+        <br>
+        <p>He ampliado mi perfil técnico con un curso avanzado de SQL, donde adquirí habilidades para diseñar y gestionar bases de datos relacionales usando PostgreSQL y MySQL. Aprendí a construir consultas complejas para análisis y generación de reportes, optimizar el rendimiento de bases de datos mediante índices y funciones avanzadas, y trabajar con múltiples tablas mediante uniones y subconsultas. Este conocimiento me permite realizar análisis de datos de forma eficiente y escalable.</p>
+        <br>
+        <p>En mi experiencia universitaria, he participado en la planificación, demostración y análisis de datos en experimentos con sistemas físicos, lo que ha reforzado mi capacidad para gestionar y evaluar datos experimentales de manera efectiva.</p>
+        <br>
+        <p>Actualmente, desempeño el rol de administrativo en el Ministerio del Gobierno de la Ciudad de Buenos Aires, donde gestiono tareas clave y optimizo procesos. Este puesto me ha permitido desarrollar habilidades adicionales en la administración y la gestión organizacional.</p>
+        <br>
+        <p>Paralelamente, estoy ampliando mis conocimientos en inteligencia artificial, con un enfoque particular en Machine Learning. Estoy entusiasmado por aplicar mi combinación única de habilidades en física, programación, desarrollo web, administración y análisis de datos a proyectos innovadores y desafiantes.</p>
+    </div>
+</div>
+{% endblock %}
